@@ -1,0 +1,36 @@
+// COLORS
+@each $name, $value in $colors
+  .bg-#{$name}
+    background-color: var(--#{$name}) !important
+  .bg-#{$name}-blend
+    background-image: url('../images/sfondo.jpg'), var(--#{$name})
+    background-repeat: repeat-y
+    background-position: center top
+    background-size: 100% auto
+  .fg-#{$name}
+    color: var(--#{$name}) !important
+  .border-#{$name}
+    border-color: var(--#{$name}) !important
+
+// IMAGES
+.wp-block-image
+  @extend .dib
+  margin-inline: 0
+  img
+    max-width: 600px
+    clip-path: url(#svgPath)
+
+.sfondo
+  background-color: $bg
+  background-image: url('../images/sfondo.jpg')
+  background-repeat: repeat-y
+  background-size: 100% auto
+  background-position: center top
+
+// .entry-content >
+//   .wp-block-group:nth-of-type(1)
+//     @extend .bg-red
+//   .wp-block-group:nth-of-type(2)
+//     @extend .bg-green
+//   .wp-block-group:nth-of-type(3)
+//     @extend .bg-blu

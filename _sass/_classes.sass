@@ -1,0 +1,74 @@
+.dn
+  display: none
+.vh
+  visibility: hidden
+.flex
+  display: flex
+.sb
+  justify-content: space-between
+.dib
+  display: inline-block
+// POSITION STICKY TOP ZERO
+.pstz
+  position: sticky
+  top: 0
+  z-index: -1
+  & + div:not(.pstz)
+    @extend .sfondo
+.mpz
+  padding: 0
+  margin: 0
+.phf
+  padding: .5em 1em
+.pbz
+  padding-block: 0 !important
+
+.border
+  border: $bw solid $fg
+.border-top
+  border-top: 1px solid var(--black)
+.border-radius
+  border-radius: $br
+.border-radius-big
+  border-radius: $brb
+
+.button
+  @extend .border-radius-big, .dib
+  padding: .5em 1em .4em 1em
+  margin: .5em 0
+  color: $bg
+  background: $fg
+  font-size: 18px
+  cursor: pointer
+
+// FONTS
+.bold
+  font-weight: bold
+.italic
+  font-style: italic
+.ff-arial
+  font-family: Arial, sans-serif
+.ff-serif
+  font-family: serif
+.ff-system-ui
+  font-family: system-ui
+.ff-monospace
+  font-family: monospace
+.ff-drafting
+  font-family: 'Drafting' !important
+.ff-book
+  font-family: 'Book' !important
+.ff-demi
+  font-family: 'Demi' !important
+.ff-eames
+  font-family: 'Eames' !important
+.ff-reboard
+  font-family: 'REBOARD' !important
+.ff-leafy
+  font-family: 'Leafy' !important
+.ff-united-serif
+  font-family: 'United Serif' !important
+.ff-united-sans
+  font-family: 'United Sans' !important
+.fs-smaller
+  font-size: small

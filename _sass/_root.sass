@@ -1,0 +1,12 @@
+\:root
+  color-scheme: light
+
+    // COLORS
+  --black: #{$black}
+  --bg: var(--cream)
+  --cream: #{$cream}
+  --fg: var(--black)
+
+  // SHADES: black, subtle, dim, white
+  @each $name, $value in $colors
+    --#{$name}: #{$value}

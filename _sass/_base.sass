@@ -1,0 +1,58 @@
+html
+  @extend .sfondo
+  // background: $bg
+  color: $fg
+  font-family: 'demi', serif
+  font-size: $fs
+body
+  @extend .mpz
+
+// LAYOUT
+.wp-block-group > .wp-block-group,
+#header,
+#footer > .wp-block-group,
+.header .entry-title,
+.header .heading-extra
+  padding: 1em 2em
+  margin: auto
+  max-width: min(100%, 1000px)
+  width: 100%
+.header .entry-title,
+.header .heading-extra,
+.header .heading-extra h2
+  padding-block: .2em
+  margin-block: 0
+.wp-block-group[class*='bg-'] > .wp-block-group
+  // padding-block: 1em
+  @extend .fg-cream
+#header
+  padding: 1em 2em
+#site-title img
+  width: 300px
+
+.menu
+  margin-top: 1em
+  ul
+    @extend .mpz
+    display: flex
+    gap: 0
+    list-style: none
+  a
+    @extend .button, .border, .border-radius, .border-green
+    background: transparent !important
+    color: $fg
+    font-size: 16px
+    padding: .5em .6em
+    padding-bottom: .5em
+    margin: .1em
+a
+  text-decoration: none
+  color: $red
+article
+  font-family: 'Book', serif
+[itemprop='button']
+  @extend .button
+h1, h2, h3
+  font-family: 'Drafting', sans-serif
+.heading-extra h2
+  margin-block: 1em

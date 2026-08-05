@@ -1,0 +1,20 @@
+#footer
+  background-image: url('../images/triga.png'), url('../images/trattore-matto.png')
+  background-repeat: repeat-x, no-repeat
+  background-position: top, bottom right
+  background-size: 100% 30px, 7em
+  padding-top: 2em
+  padding-bottom: 2em
+  font-size: large
+  & > .wp-block-group
+    @extend .ff-drafting, .bold, .fg-red, .flex
+    justify-content: space-between
+  & + .wp-block-group .wp-block-group
+    padding-block: .5em !important
+    font-size: medium
+  animation: sentiero 500s linear infinite
+@keyframes sentiero
+  from
+    background-position-x: right
+  to
+    background-position-x: left

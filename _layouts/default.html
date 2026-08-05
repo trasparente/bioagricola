@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class=''>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LINKS -->
+  <link rel='canonical' href='{{ page.url | absolute_url }}' />
+  <!-- CSS -->
+  <link rel='icon' href='{{ "assets/images/favicon.ico" | absolute_url }}?sitetime={{ site.time }}'>
+  <link rel='stylesheet' href='{{ "assets/css/stylesheet.css" | absolute_url }}?sitetime={{ site.time }}'>
+</head>
+<body class="home page-template-default page page-id-36 logged-in wp-embed-responsive theme-blankslate woocommerce-no-js">
+<div id="wrapper" class="hfeed">
+
+
+<header id="header" role="banner">
+  <div id="branding">
+    <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+      <a href="https://stradatrasparente.altervista.org/" title="Blog di stradatrasparente" rel="home" itemprop="url"><img src='{{ "assets/images/CASALS-BIO-AGRICOLA.png" | absolute_url }}'></a>
+    </div>
+  </div>
+  <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <div class="menu"><ul>
+      <li class="page_item page-item-120"><a href="#"><span itemprop="name">OLIO</span></a></li>
+      <li class="page_item page-item-16"><a href="#"><span itemprop="name">PASTA</span></a></li>
+      <li class="page_item page-item-17"><a href="#"><span itemprop="name">LA NOSTRA STORIA</span></a></li>
+      <li class="page_item page-item-36 current_page_item"><a href="#" aria-current="page"><span itemprop="name">ESPERIENZE</span></a></li>
+      <li class="page_item page-item-220"><a href="#" class='bg-red'><span itemprop="name">SHOP</span></a></li>
+      <li class="page_item page-item-37"><a href="#" class='bg-blu'><span itemprop="name">COLLABORAZIONI</span></a></li>
+    </ul></div>
+  </nav>
+  <nav id="menu1" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <div class="menu"><ul>
+      <li class="page_item page-item-120"><a href="#"><span itemprop="name">OLIO</span></a></li>
+      <li class="page_item page-item-16"><a href="#"><span itemprop="name">PASTA</span></a></li>
+      <li class="page_item page-item-17"><a href="#"><span itemprop="name">LA NOSTRA STORIA</span></a></li>
+      <li class="page_item page-item-36 current_page_item"><a href="#" aria-current="page"><span itemprop="name">ESPERIENZE</span></a></li>
+      <li class="page_item page-item-220"><a href="#" class='bg-red'><span itemprop="name">SHOP</span></a></li>
+      <li class="page_item page-item-37"><a href="#" class='bg-blu'><span itemprop="name">COLLABORAZIONI</span></a></li>
+    </ul></div>
+  </nav>
+</header>
+<div id="container">
+  <main id="content" role="main">
+{{ content }}
+  </main>
+</div>
+<footer id="footer" role="contentinfo">
+  <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex">
+  <div style='color:var(--black)' id="copyright">&copy; 2026 - P{% assign pre = "1,4,7,8,3,5,9,6,2,0,7" | split: "," | sample: 8 %}{{pre}}<br><br>COLLABORAZIONI<br>SHOP<br>PASTA<br>OLIO<svg height="0" width="0">
+<defs>
+<clipPath id="svgPath">
+<path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M215,100.3c97.8-32.6,90.5-71.9,336-77.6
+  c92.4-2.1,98.1,81.6,121.8,116.4c101.7,149.9,53.5,155.9,14.7,178c-96.4,54.9,5.4,269-257,115.1c-57-33.5-203,46.3-263.7,20.1
+  c-33.5-14.5-132.5-45.5-95-111.1C125.9,246.6,98.6,139.1,215,100.3z"/>
+</clipPath>
+</defs>
+</svg></div>
+  <div>{% assign pre = "s,t,r,a,d,a,l,e,o,n,a,r,d,i" | split: "," | sample: 6 %}{{ pre }}</div>
+  </div><!-- wp-block-group -->
+</footer>
+<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex bg-black fg-white ff-drafting"><div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex flex sb">
+  <div>version - {{ site.github.build_revision | slice: 0, 7 }}</div>{%- assign reponame = site.github.public_repositories | where: "full_name", site.github.repository_nwo | first -%}
+  <div>updated - {{ reponame.pushed_at | date: '%e %b %Y - %H:%M' }}</div>
+</div></div><!-- wp-block-group -->
+</div><!-- end .entry-content -->
+
+</body>
+</html>
