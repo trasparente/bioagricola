@@ -1,0 +1,23 @@
+button, .button
+
+  cursor: pointer
+
+  // Reset button appearance
+  @extend .no-appearance
+  background: transparent
+  cursor: pointer
+  outline: none
+  text-decoration: none !important
+  font-size: $fs
+
+  @extend .border, .border-radius, .dib
+  padding: .5em 1em .4em 1em
+  margin: .5em 0
+  color: $bg
+  background: $fg
+  font-size: 18px
+  cursor: pointer
+  &:hover
+    @extend .bg-cream, .fg-black
+  &:active
+    @extend .bg-white

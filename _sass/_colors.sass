@@ -18,7 +18,17 @@
   margin-inline: 0
   img
     max-width: 600px
+  .wp-image-67
+    clip-path: url(#triga-w)
+  .wp-image-66
     clip-path: url(#svgPath)
+.logo-bottom
+  max-height: 12px
+  vertical-align: center
+.fg-pic
+  background: url("https://images.getrecipekit.com/20231023112420-green-20tea-20ice-20cream.jpg"), url('../images/sfondo.jpg')
+  background-blend-mode: screen
+  background-position: center top
 
 .sfondo
   background-color: $bg
@@ -26,6 +36,9 @@
   background-repeat: repeat-y
   background-size: 100% auto
   background-position: center top
+  &.dark
+    background-image: url('../images/sfondo-dark.jpg')
+
 
 // .entry-content >
 //   .wp-block-group:nth-of-type(1)

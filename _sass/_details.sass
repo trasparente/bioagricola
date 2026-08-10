@@ -1,0 +1,9 @@
+details
+  @extend .dib
+  margin: .3em
+  summary
+    @extend .ff-drafting, .fs-h3, .link
+    &:hover, &::marker
+      color: var(--black) !important
+  &[open] summary::marker
+    @extend .fg-red

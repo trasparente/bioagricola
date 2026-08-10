@@ -1,0 +1,36 @@
+#header
+  @extend .flex, .sb
+  padding: 1em 2em
+#site-title a
+  @extend .dib
+  img
+    height: 64px
+  // width: 300px
+
+nav#menu
+  margin-inline: auto
+  .menu
+    margin-top: 1em
+    ul
+      @extend .mpz, .flex
+      // gap: .5em
+      list-style: none
+    a
+      @extend .ff-united-sans, .border-radius, .fg-black
+      padding: 0.6em 0.6em 0.5em
+      color: $fg
+      font-size: 17px
+      font-weight: 600
+      &:hover
+        @extend .bg-green, .fg-cream
+      &:active
+        @extend .fg-white
+      &.accent-red:hover
+        @extend .bg-red
+      &.accent-blu:hover
+        @extend .bg-blu
+      &[aria-current='page']
+        @extend .bg-white
+        &:hover
+          @extend .fg-black
+          cursor: default

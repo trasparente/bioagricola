@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LINKS -->
+  <link rel='canonical' href='{{ page.url | absolute_url }}' />
+  <link rel='icon' href='{{ "assets/images/favicon.ico" | absolute_url }}?sitetime={{ site.time }}'>
+
+  <!-- CSS -->
+  <link rel='stylesheet' href='{{ "assets/css/rpg-awesome.min.css" | absolute_url }}?build_revision={{ github.build_revision }}'>
+  <link rel='stylesheet' href='{{ "assets/css/stylesheet.css" | absolute_url }}?build_revision={{ github.build_revision }}'>
+
+  <!-- JS -->
+  <!-- jQuery 3.6.3 https://api.jquery.com/ -->
+  <script src='{{ "assets/js/jquery-3.6.3.min.js" | absolute_url }}'></script>
+  <!-- Custom script Deferred -->
+  <script src='{{ "assets/js/script.js" | absolute_url }}?sitetime={{ sitetime }}' defer></script>
+</head>

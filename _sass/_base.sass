@@ -1,9 +1,11 @@
 html
   @extend .sfondo
-  // background: $bg
   color: $fg
   font-family: 'demi', serif
   font-size: $fs
+  // SCROLL
+  overflow-y: scroll
+  scroll-behavior: smooth
 body
   @extend .mpz
 
@@ -22,32 +24,48 @@ body
 .header .heading-extra h2
   padding-block: .2em
   margin-block: 0
-.wp-block-group[class*='bg-'] > .wp-block-group
-  // padding-block: 1em
-  @extend .fg-cream
-#header
-  padding: 1em 2em
-#site-title img
-  width: 300px
+.wp-block-group[class*='bg-']
+  fieldset
+    @extend .no-border
+    margin-bottom: 4em
+  &:not(.bg-white) > .wp-block-group
+    @extend .fg-cream
 
-.menu
-  margin-top: 1em
-  ul
-    @extend .mpz
-    display: flex
-    gap: 0
-    list-style: none
+// & + .wp-block-group .wp-block-group
+.bar
+  @extend .flex, .sb, .fs-medium
+  padding-block: .4em !important
+  em, strong
+    @extend .uppercase, .fg-white
+.fg-black .bar
+  em, strong
+    @extend .fg-white
+// BOTTOM BAR
+footer + .bg-black .bar
+  display: grid !important
+  grid-template-columns: 1fr 1fr 1fr
+  div:nth-child(2)
+    @extend .center
+  div:nth-child(3)
+    @extend .right
   a
-    @extend .button, .border, .border-radius, .border-green
-    background: transparent !important
-    color: $fg
-    font-size: 16px
-    padding: .5em .6em
-    padding-bottom: .5em
-    margin: .1em
-a
+    @extend .fg-cream
+
+a, .link
   text-decoration: none
-  color: $red
+  color: var(--red)
+  cursor: pointer
+  &:hover
+    @extend .fg-blu
+  &:active
+    @extend .fg-white
+main a:hover
+  text-decoration: underline
+
+ul
+  li
+    list-style-image: '⬬'
+
 article
   font-family: 'Book', serif
 [itemprop='button']

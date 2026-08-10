@@ -1,0 +1,18 @@
+{% include bar/bar_top.html %}
+<header id="header" role="banner">
+  <div id="branding">
+    <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+      <a href="{{ absolute_path }}" title="Blog di stradatrasparente" rel="home" itemprop="url"><img src='{{ "assets/images/CASALS-BIO-AGRICOLA.png" | absolute_url }}'></a>
+    </div>
+  </div>
+  <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <div class="menu"><ul>
+      <li class="page_item page-item-120"><a href="{{ '/' | absolute_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}><span itemprop="name">OLIO</span></a></li>
+      <li class="page_item page-item-16"><a href="{{ 'pasta/' | absolute_url }}"{% if page.url == '/pasta/' %} aria-current="page"{% endif %}><span itemprop="name">PASTA</span></a></li>
+      <li class="page_item page-item-220"><a href="#" class='accent-red'><span itemprop="name">SHOP</span></a></li>
+      <li class="page_item page-item-17"><a href="#" class='accent-blu'><span itemprop="name">STORIA</span></a></li>
+      <li class="page_item page-item-36"><a href="#" class='accent-blu'><span itemprop="name">ESPERIENZE</span></a></li>
+      <li class="page_item page-item-37"><a href="#" class='accent-blu'><span itemprop="name">COLLABORAZIONI</span></a></li>
+    </ul></div>
+  </nav>
+</header>
