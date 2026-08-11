@@ -1,0 +1,3 @@
+{% for sz in sizes %}<div itemprop="size" style='font-size:{{ sz }};'>Font SIZE {{ sz }} <i>Italic</i> <span style='font-weight:500;'>Semi</span> <b>Bold</b></div>
+{% endfor %}{% for co in colors %}<div itemprop="button" class='bg-{{ co }}' class='bg-{{ co }}'>{{ co | upcase }}</div>
+{% endfor %}

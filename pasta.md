@@ -8,6 +8,7 @@ permalink: pasta/
 
 {% include stacks/typography.html %}
 {% include stacks/olio-pasta.html %}
+{% include stacks/blu-sky.html %}
 {% include stacks/red-wine.html %}
 {% include stacks/green-oil.html %}
 {% include stacks/olio-bio.html %}

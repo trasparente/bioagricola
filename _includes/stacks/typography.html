@@ -3,20 +3,23 @@
   <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex"><div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex">
     <details><summary>fonts</summary>
       <fieldset itemscope='book' class='ff-book'>
-      <legend>NFST-Book</legend><p>Given his extensive career and ongoing activities, Parvizyar’s influence continues to resonate in Iran’s cultural and political spheres, inspiring new generations of broadcasters, journalists, and media scholars.</p>{% for sz in sizes %}<div itemprop="size" style='font-size:{{ sz }};'>Font SIZE {{ sz }} <i>Italic</i> <b>Bold</b></div>
-      {% endfor %}{% for co in colors %}<div itemprop="button" class='bg-{{ co }}'>{{ co | upcase }}</div>
-      {% endfor %}</fieldset>
+      <legend>NFST-Book</legend><p>Given his extensive career and ongoing activities, Parvizyar’s influence continues to resonate in Iran’s cultural and political spheres, inspiring new generations of broadcasters, journalists, and media scholars.</p>
+      {% include typos.html %}
+      </fieldset>
 
     {% comment %} </div></div><!-- wp-block-group -->
     <div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex"><div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex"> {% endcomment %}
       <fieldset itemscope='demi' class='ff-demi'><legend>NFST-Demi</legend>
-      <p>His work continues to inspire new generations, ensuring that his legacy endures as a pillar of Iranian broadcast history and cultural discourse.</p>{% for sz in sizes %}<div itemprop="size" style='font-size:{{ sz }};'>Font SIZE {{ sz }} <i>Italic</i> <b>Bold</b></div>
-      {% endfor %}{% for co in colors %}<div itemprop="button" class='bg-{{ co }}' class='bg-{{ co }}'>{{ co | upcase }}</div>
-      {% endfor %}</fieldset>
+      <p>His work continues to inspire new generations, ensuring that his legacy endures as a pillar of Iranian broadcast history and cultural discourse.</p>{% include typos.html %}</fieldset>
       <div><h2 class='ff-united-sans'>UNITED <span class='fg-red'>ITALIC</span> <span class='fg-green'>REGULAR</span> <span class='fg-blu'>HEAVY</span></h2></div>
       <fieldset itemscope='united' class='ff-united-sans'><legend>United sans regular medium</legend>
-      <p>His work continues to inspire new generations, ensuring that his legacy endures as a pillar of Iranian broadcast history and cultural discourse.</p>{% for sz in sizes %}<div itemprop="size" style='font-size:{{ sz }};'>Font SIZE {{ sz }} <i>Italic</i> <b>Bold</b></div>
-      {% endfor %}{% for co in colors %}<div itemprop="button" class='bg-{{ co }}' class='bg-{{ co }}'>{{ co | upcase }}</div>
-      {% endfor %}</fieldset>
+      <p>His work continues to inspire new generations, ensuring that his legacy endures as a pillar of Iranian broadcast history and cultural discourse.</p>
+      {% include typos.html %}
+      </fieldset>
+      <div><h2 class='ff-dm-sans'>DM <span class='fg-red'>SANS</span> <span class='fg-green'>LATIN</span> <span class='fg-blu'>EXTENDED</span></h2></div>
+      <fieldset itemscope='dm-sans' class='ff-dm-sans'><legend>United sans regular medium</legend>
+      <p>DM Sans is a low-contrast geometric sans serif design, intended for use at smaller text sizes.<br>Colophon Foundry is a London and Los Angeles-based digital type foundry established in 2009.</p>
+      {% include typos.html %}
+      </fieldset>
     </details>
   </div></div><!-- wp-block-group -->
